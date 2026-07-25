@@ -120,8 +120,8 @@ python evaluate.py
 
 ## Architectural Design Decisions
 
-- The solution separates **rule extraction** (one-time) from **compliance evaluation** (repeated), avoiding repeated processing of the regulation documents.
-- PDFs are processed entirely in memory; only the extracted structured rules are persisted in `rules.json`.
+- The solution separates **rule extraction** (one-time) from **compliance evaluation** (repeated). Regulatory PDFs are processed only once to extract structured rules, which are persisted in `rules.json`. Since regulations change infrequently and evaluation requires only the extracted rules, the original PDF content is not retained or indexed.
+- PDFs are processed entirely in memory, avoiding unnecessary temporary storage.
 - Both extraction and evaluation use structured LLM output (Pydantic models) to ensure deterministic, machine-readable results.
 - A simple sequential workflow was chosen because the processing steps are fixed and deterministic, making agent orchestration unnecessary.
 - RAG, vector databases, and LangGraph were intentionally omitted because the extracted rule set fits comfortably within the model context and can be evaluated in a single pass.
@@ -147,8 +147,9 @@ One key observation was that regulatory documents combine mandatory requirements
 
 With more time, the solution could be extended by:
 
-- Using RAG to retrieve only the most relevant compliance rules instead of loading the full rule set.
-- Building a LangGraph workflow with separate retrieval, evaluation and validation steps.
+- Storing extracted compliance rules in a dedicated rule store (e.g., a database with metadata and embeddings) instead of `rules.json`, enabling scalable retrieval and management of large regulatory rule sets.
+- Using RAG to retrieve only the most relevant compliance rules from the rule store instead of loading the full rule set.
+- Building a LangGraph workflow with separate retrieval, evaluation, and validation steps.
 - Exposing the compliance engine through a REST API for automation and a web UI for user-friendly compliance checks.
 - Supporting incremental rule updates when regulations change instead of rebuilding the entire rule set.
 - Expanding the golden dataset with additional real-world marketing examples and automated regression testing.
