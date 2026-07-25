@@ -143,7 +143,7 @@ The extraction prompt maximizes recall by extracting every distinct actionable r
 
 ## Observations
 
-One key observation was that regulatory documents combine mandatory requirements, illustrative examples, and explanatory guidance. Achieving reliable rule extraction and compliance evaluation therefore required prompts that consistently capture the underlying regulatory requirement, distinguish it from non-binding examples, and base findings only on evidence explicitly present in the supplied marketing text.
+One key observation was that regulatory documents are written for human readers rather than machine processing. Mandatory requirements are mixed with explanatory guidance, illustrative examples, and recommendations, without a consistent structure or format. Achieving reliable rule extraction and compliance evaluation therefore required carefully designed prompts to identify actionable requirements, distinguish them from non-binding content, and report only findings explicitly supported by both the regulations and the supplied marketing text. This also motivated the architecture: since only the extracted compliance rules are required during evaluation, the original PDFs do not need to be retained or embedded. Instead, the documents are processed once to produce a structured rule set that can be reused for subsequent evaluations.
 
 ## Future Improvements
 
