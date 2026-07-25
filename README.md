@@ -1,2 +1,155 @@
-# regulation-compliance-agent
-regulation-compliance-agent
+# Regulation Compliance Agent
+
+A proof-of-concept application that extracts marketing compliance rules from CySEC regulatory circulars and evaluates marketing text against those rules using an LLM.
+
+## Architecture
+
+```text
+                 +----------------+
+                 |  constants.py  |
+                 +----------------+
+                         │
+                         ▼
+                  +-------------+
+                  |  main.py    |
+                  +-------------+
+                  /             \
+                 /               \
+                ▼                 ▼
+      +----------------+   +------------------+
+      | RuleExtractor  |   | ComplianceEvaluator |
+      +----------------+   +------------------+
+               │                    │
+               ▼                    ▼
+         +-------------+      +-------------+
+         |   llm.py    |      |   llm.py    |
+         +-------------+      +-------------+
+               │                    │
+               └──────────┬─────────┘
+                          ▼
+                    OpenAI API
+```
+
+## Processing Flow
+
+```text
+PDF URLs
+    │
+    ▼
+Download PDFs (async)
+    │
+    ▼
+Extract PDF text
+    │
+    ▼
+LLM extracts compliance rules
+    │
+    ▼
+rules.json
+    │
+    ▼
+User marketing text
+    │
+    ▼
+LLM evaluates against all rules
+    │
+    ▼
+Compliance report
+```
+
+## Modules
+
+| Module | Responsibility |
+|---------|----------------|
+| `main.py` | Loads configuration, initializes the pipeline and runs extraction/evaluation. |
+| `constants.py` | Application configuration, prompts and PDF URLs. |
+| `models.py` | Pydantic models for configuration, rules and evaluation results. |
+| `llm.py` | LangChain/OpenAI client and the extraction/evaluation chains. |
+| `extraction.py` | Downloads PDFs concurrently, extracts text and generates `rules.json`. |
+| `evaluation.py` | Loads extracted rules, evaluates user text and renders the final report. |
+
+## Installation
+
+```bash
+pip install -e .
+```
+
+Create a `.env` file:
+
+```text
+OPENAI_API_KEY=...
+LLM_MODEL=gpt-4.1-mini
+```
+
+## Usage
+
+### Extract compliance rules
+
+Extract rules from the regulation PDFs and save them to `data/rules.json`.
+
+```bash
+python -m compliance_agent.main --extract
+```
+
+This step only needs to be run once, or whenever the source regulations change.
+
+### Evaluate marketing text
+
+Evaluate a piece of marketing text against the extracted rules.
+
+```bash
+python -m compliance_agent.main \
+  --evaluate "Open a retail CFD account today and receive a 50% deposit bonus."
+```
+
+### Extract and evaluate
+
+```bash
+python -m compliance_agent.main \
+  --extract \
+  --evaluate "Open a retail CFD account today and receive a 50% deposit bonus."
+```
+
+### Run the golden dataset
+
+Evaluate the implementation against the provided golden dataset.
+
+```bash
+python evaluate.py
+```
+
+## Architectural Design Decisions
+
+- The solution separates **rule extraction** (one-time) from **compliance evaluation** (repeated), avoiding repeated processing of the regulation documents.
+- PDFs are processed entirely in memory; only the extracted structured rules are persisted in `rules.json`.
+- Both extraction and evaluation use structured LLM output (Pydantic models) to ensure deterministic, machine-readable results.
+- A simple sequential workflow was chosen because the processing steps are fixed and deterministic, making agent orchestration unnecessary.
+- RAG, vector databases, and LangGraph were intentionally omitted because the extracted rule set fits comfortably within the model context and can be evaluated in a single pass.
+
+## Key Prompt Design Decisions
+
+### Rule extraction
+- Extract only actionable marketing compliance requirements.
+- Ignore background information, regulatory history and administrative guidance.
+- Preserve traceability by recording the source document, page number and supporting quote for every extracted rule.
+
+### Compliance evaluation
+- Report only violations supported by evidence from the supplied text.
+- Return concise, actionable explanations without legal reasoning.
+- Deduplicate similar findings into a single user-facing issue.
+- Reference the applicable rule ID(s) as supporting evidence.
+
+## Observations
+
+One surprising finding was that fragmented marketing excerpts frequently produced false positives because the LLM tended to interpret missing disclosures as compliance violations. Careful prompt design was therefore required to ensure that findings are based only on evidence explicitly present in the supplied text.
+
+## Future Improvements
+
+With more time, the solution could be extended by:
+
+- Using RAG to retrieve only the most relevant compliance rules instead of loading the full rule set.
+- Building a LangGraph workflow with separate retrieval, evaluation and validation steps.
+- Exposing the compliance engine through a REST API for automation and a web UI for user-friendly compliance checks.
+- Supporting incremental rule updates when regulations change instead of rebuilding the entire rule set.
+- Expanding the golden dataset with additional real-world marketing examples and automated regression testing.
+- Supporting multiple jurisdictions (e.g., FCA, ESMA, CySEC) through pluggable regulation packs.

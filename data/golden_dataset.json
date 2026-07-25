@@ -1,0 +1,87 @@
+[
+  {
+    "id": "bonus_deposit_match",
+    "text": "Open a retail CFD account today and receive a 50% deposit bonus. The bonus becomes withdrawable after you trade 20 lots.",
+    "expected_compliant": false,
+    "expected_topics": [
+      "bonus incentive"
+    ],
+    "reason": "A deposit-linked bonus conditioned on trading volume incentivises retail clients to trade speculative products."
+  },
+  {
+    "id": "refer_a_friend_reward",
+    "text": "Refer a friend who funds a forex account and receive $100 after your friend completes 10 trades.",
+    "expected_compliant": false,
+    "expected_topics": [
+      "bonus incentive"
+    ],
+    "reason": "The referral payment is linked to funding and trading activity."
+  },
+  {
+    "id": "risk_free_trades",
+    "text": "Start trading CFDs with five risk-free trades. We will refund your losses once you reach the required trading volume.",
+    "expected_compliant": false,
+    "expected_topics": [
+      "bonus incentive",
+      "misleading risk claim"
+    ],
+    "reason": "Loss reimbursement tied to trading volume is a prohibited incentive and 'risk-free' can mislead clients."
+  },
+  {
+    "id": "aggressive_sales_alias",
+    "text": "Hi, this is Alex from Elite Markets. Deposit today before this opportunity disappears. I will keep calling until we complete your account funding.",
+    "expected_compliant": false,
+    "expected_topics": [
+      "alias",
+      "aggressive sales pressure"
+    ],
+    "reason": "The script uses an alias, pressure to deposit, and repeated-call language."
+  },
+  {
+    "id": "unbalanced_past_performance",
+    "text": "OUR PORTFOLIO RETURNED 38% LAST YEAR. Join now and target similar gains. Past performance does not guarantee future results.",
+    "expected_compliant": false,
+    "expected_topics": [
+      "past performance",
+      "unbalanced risk presentation"
+    ],
+    "reason": "Past performance is the dominant claim, while the warning is less prominent and the required reference period and source are absent."
+  },
+  {
+    "id": "zero_commission_hidden_costs",
+    "text": "Trade stocks with 0% commission. Keep more of every investment with no trading fees.",
+    "expected_compliant": false,
+    "expected_topics": [
+      "cost disclosure"
+    ],
+    "reason": "The copy presents trading as cost-free without disclosing other explicit or implicit costs."
+  },
+  {
+    "id": "zero_commission_disclosed_costs",
+    "text": "Trade selected stocks with 0% commission. Spreads, currency-conversion charges and overnight funding fees may still apply. Review the full costs and charges before trading. Investments can fall as well as rise, and you may lose your invested capital.",
+    "expected_compliant": true,
+    "expected_topics": [],
+    "reason": "The commission claim is qualified by clear disclosure of other relevant costs and risks."
+  },
+  {
+    "id": "balanced_product_promotion",
+    "text": "Diversify your portfolio with access to global markets. Market prices can rise or fall, leveraged products magnify both gains and losses, and you may lose all or more than your initial investment. Fees and spreads apply.",
+    "expected_compliant": true,
+    "expected_topics": [],
+    "reason": "Benefits, material risks and costs are presented together without an incentive or performance promise."
+  },
+  {
+    "id": "lower_spread_reward",
+    "text": "Eligible active clients may receive reduced spreads under our published pricing schedule. No cash reward, trading credit or deposit bonus is offered. Trading involves risk, and costs vary by instrument.",
+    "expected_compliant": true,
+    "expected_topics": [],
+    "reason": "Reduced spreads are described transparently and are not presented as a cash bonus linked to trading volume."
+  },
+  {
+    "id": "fair_comparison",
+    "text": "Our average EUR/USD spread was 0.8 pips during April 2026, compared with Provider B's published average of 1.0 pip for the same period. Sources: each provider's April 2026 execution report. The comparison excludes overnight funding and assumes the same account type and trade size. Spreads vary with market conditions.",
+    "expected_compliant": true,
+    "expected_topics": [],
+    "reason": "The comparison identifies its period, sources, assumptions and limitations."
+  }
+]
