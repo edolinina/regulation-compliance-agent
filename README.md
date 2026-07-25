@@ -141,7 +141,7 @@ python evaluate.py
 
 ## Observations
 
-One surprising finding was that fragmented marketing excerpts frequently produced false positives because the LLM tended to interpret missing disclosures as compliance violations. Careful prompt design was therefore required to ensure that findings are based only on evidence explicitly present in the supplied text.
+One key observation was that regulatory documents combine mandatory requirements, illustrative examples, and explanatory guidance. Achieving reliable rule extraction and compliance evaluation therefore required prompts that consistently capture the underlying regulatory requirement, distinguish it from non-binding examples, and base findings only on evidence explicitly present in the supplied marketing text.
 
 ## Future Improvements
 

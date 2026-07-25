@@ -1,3 +1,5 @@
+"""CLI entry point for evaluating the agent against the golden dataset."""
+
 from __future__ import annotations
 
 import argparse
@@ -11,6 +13,7 @@ from compliance_agent.main import load_settings
 
 
 async def evaluate_dataset(dataset_path: Path) -> None:
+    """Run the evaluator against each golden dataset case and print accuracy."""
     cases = json.loads(dataset_path.read_text(encoding="utf-8"))
 
     settings = load_settings()
@@ -32,6 +35,7 @@ async def evaluate_dataset(dataset_path: Path) -> None:
         )
 
         if not passed:
+            # Only print detailed failures when the predicted label is wrong.
             for failure in result.failures:
                 print(f"  - {failure.rule_id}: {failure.explanation}")
 
@@ -40,6 +44,7 @@ async def evaluate_dataset(dataset_path: Path) -> None:
 
 
 def parse_args() -> argparse.Namespace:
+    """Parse CLI arguments for dataset evaluation."""
     parser = argparse.ArgumentParser(
         description="Evaluate the compliance agent against the golden dataset."
     )
@@ -52,6 +57,7 @@ def parse_args() -> argparse.Namespace:
 
 
 def main() -> None:
+    """Execute the async dataset evaluation CLI."""
     args = parse_args()
     asyncio.run(evaluate_dataset(args.dataset))
 

@@ -1,7 +1,7 @@
 [
   {
     "id": "C194-R001",
-    "requirement": "Cyprus Investment Firms must not offer bonuses designed to incentivise retail clients to trade in complex speculative products such as CFDs, binary options, and rolling spot forex.",
+    "requirement": "Investment firms must not offer bonuses designed to incentivise retail clients to trade in complex speculative products such as CFDs, binary options, and rolling spot forex.",
     "source_document": "Circular C194",
     "source_page": 1,
     "source_quote": "CIFs must avoid the practice of offering bonuses that are designed to incentivise retail clients to trade in complex speculative products such as CFDs, binary options and rolling spot forex as it is unlikely that a firm offering such bonuses could demonstrate that it is acting honestly, fairly and professionally and in the best interests of its retail clients [article 36(1) of the Investment Services and Activities and Regulated Markets Law, ‘the Law’].",
@@ -9,15 +9,15 @@
   },
   {
     "id": "C194-R002",
-    "requirement": "Bonuses that are return of an amount (e.g., welcome bonuses, volume bonuses, refer-a-friend bonuses) which cannot be withdrawn until a target volume is reached are examples of bonuses that are not permissible if they incentivise trading in complex speculative products.",
+    "requirement": "Bonuses that are offered to retail clients must not conflict with the obligation to act honestly, fairly, and professionally and in the best interests of retail clients as required by article 36(1) of the Investment Services and Activities and Regulated Markets Law.",
     "source_document": "Circular C194",
-    "source_page": 3,
-    "source_quote": "An amount of money or a percentage on the initial or/and additional deposit of the client, which cannot be withdrawn until a target volume has been reached... An amount of money based on the trades the client executes, which cannot be withdrawn until a target volume has been reached... An amount of money or percentage of the referred “friend’s” initial deposit, which cannot be withdrawn until a target volume has been reached.",
+    "source_page": 1,
+    "source_quote": "CySEC has undertaken a number of thematic reviews, which have provided evidence that a number of bonuses offered to retail investors do not seem to be consistent with article 36 of the Law regarding the conduct of business obligations.",
     "source_url": "https://www.cysec.gov.cy/CMSPages/GetFile.aspx?guid=941acdaa-0e78-44b2-853e-14007451d7e8"
   },
   {
     "id": "C194-R003",
-    "requirement": "Offering lower spreads as a reward to clients instead of return of an amount is permissible and not considered a violation of article 36(1) of the Law.",
+    "requirement": "Firms may offer rewards such as lower spreads instead of cash or monetary bonuses to retail clients without violating article 36(1) of the Law.",
     "source_document": "Circular C194",
     "source_page": 2,
     "source_quote": "If a CIF wishes to reward its clients, it can offer to them for example lower spreads instead of a return of an amount, as the example 8 in Appendix 1 (cash rebates). In this case, the CIF is not considered that is violating the article 36(1) of the Law.",
@@ -25,7 +25,7 @@
   },
   {
     "id": "C181-R001",
-    "requirement": "Marketing and promotional material must not be produced by Staff who communicate with clients about services and products, as such production is excluded from the scope of this circular.",
+    "requirement": "Marketing and promotional material must not be produced by staff who communicate with clients for promoting CIF services and products, as such production is excluded from the scope of this circular.",
     "source_document": "Circular C181",
     "source_page": 2,
     "source_quote": "This circular does not apply to persons who only: ... v. Produce marketing and promotional material.",
@@ -33,10 +33,10 @@
   },
   {
     "id": "C181-R002",
-    "requirement": "Staff must not use frequent and repeated telephone calls, aggressive language, or exert pressure urging or advising clients to invest or deposit funds in communications with clients.",
+    "requirement": "Staff communicating with clients must not provide investment advice unless they are authorised and qualified employees of the relevant department.",
     "source_document": "Circular C181",
-    "source_page": 3,
-    "source_quote": "CIFs must ensure that practices such as frequent and repeated telephone calls to clients initiated by the Staff, and/or the use of aggressive language, and/or the exercising of pressure, urging/advising the client e.g. to invest and/or to deposit funds, are not and must not be employed/used by the Staff.",
+    "source_page": 2,
+    "source_quote": "The Staff must not provide investment advice in relation to financial instruments. In case the CIF is authorised to provide investment advice, it shall be provided by authorised and qualified employees of the department that is responsible to do so.",
     "source_url": "https://www.cysec.gov.cy/CMSPages/GetFile.aspx?guid=ea02458e-f564-4ec1-ab4d-79a32fb76705"
   },
   {
@@ -48,40 +48,64 @@
     "source_url": "https://www.cysec.gov.cy/CMSPages/GetFile.aspx?guid=ea02458e-f564-4ec1-ab4d-79a32fb76705"
   },
   {
+    "id": "C181-R004",
+    "requirement": "Staff must not employ frequent and repeated telephone calls, aggressive language, or pressure tactics urging or advising clients to invest or deposit funds.",
+    "source_document": "Circular C181",
+    "source_page": 3,
+    "source_quote": "CIFs must ensure that practices such as frequent and repeated telephone calls to clients initiated by the Staff, and/or the use of aggressive language, and/or the exercising of pressure, urging/advising the client e.g. to invest and/or to deposit funds, are not and must not be employed/used by the Staff.",
+    "source_url": "https://www.cysec.gov.cy/CMSPages/GetFile.aspx?guid=ea02458e-f564-4ec1-ab4d-79a32fb76705"
+  },
+  {
+    "id": "C181-R005",
+    "requirement": "CIFs must establish procedures and controls to assess the performance of staff communicating with clients and take corrective measures such as warnings, sanctions, or dismissal when staff behavior is contrary to regulatory requirements or this circular, including exerting pressure or providing unauthorized investment advice.",
+    "source_document": "Circular C181",
+    "source_page": 3,
+    "source_quote": "CIFs must establish, implement and maintain appropriate procedures /controls for the assessment of the performance of the Staff and for taking measures ... in instances where ... actions ... are contrary to the provisions of the Law and the present circular.",
+    "source_url": "https://www.cysec.gov.cy/CMSPages/GetFile.aspx?guid=ea02458e-f564-4ec1-ab4d-79a32fb76705"
+  },
+  {
     "id": "C502-R001",
-    "requirement": "Marketing materials, promotions, client communications, bonuses, rewards, or financial incentives must provide costs and charges information that is fair, clear, and not misleading.",
-    "source_document": "C502",
+    "requirement": "Marketing materials, promotions, client communications, bonuses, rewards, or financial incentives must provide costs and charges information to retail clients in a timely manner.",
+    "source_document": "Circular C502",
     "source_page": 1,
-    "source_quote": "The focus of the CSA will be on information provided to retail clients. NCAs, in particular, will review how firms ensure that these disclosures: are fair, clear and not misleading;",
+    "source_quote": "The focus of the CSA will be on information provided to retail clients. NCAs, in particular, will review how firms ensure that these disclosures are provided to clients in a timely manner.",
     "source_url": "https://www.cysec.gov.cy/CMSPages/GetFile.aspx?guid=ddc8f60a-6b6e-4959-96bf-f74909d76988"
   },
   {
     "id": "C502-R002",
-    "requirement": "Costs and charges disclosed in marketing materials, promotions, client communications, bonuses, rewards, or financial incentives must be based on accurate data reflecting all explicit and implicit costs and charges.",
-    "source_document": "C502",
+    "requirement": "Marketing materials, promotions, client communications, bonuses, rewards, or financial incentives must provide costs and charges information that is fair, clear, and not misleading.",
+    "source_document": "Circular C502",
     "source_page": 1,
-    "source_quote": "NCAs, in particular, will review how firms ensure that these disclosures: are based on accurate data reflecting all explicit and implicit costs and charges;",
+    "source_quote": "NCAs, in particular, will review how firms ensure that these disclosures are fair, clear and not misleading.",
     "source_url": "https://www.cysec.gov.cy/CMSPages/GetFile.aspx?guid=ddc8f60a-6b6e-4959-96bf-f74909d76988"
   },
   {
     "id": "C502-R003",
-    "requirement": "Marketing materials, promotions, client communications, bonuses, rewards, or financial incentives must adequately disclose any inducements.",
-    "source_document": "C502",
+    "requirement": "Marketing materials, promotions, client communications, bonuses, rewards, or financial incentives must be based on accurate data reflecting all explicit and implicit costs and charges.",
+    "source_document": "Circular C502",
     "source_page": 1,
-    "source_quote": "NCAs, in particular, will review how firms ensure that these disclosures: adequately disclose inducements.",
+    "source_quote": "NCAs, in particular, will review how firms ensure that these disclosures are based on accurate data reflecting all explicit and implicit costs and charges.",
+    "source_url": "https://www.cysec.gov.cy/CMSPages/GetFile.aspx?guid=ddc8f60a-6b6e-4959-96bf-f74909d76988"
+  },
+  {
+    "id": "C502-R004",
+    "requirement": "Marketing materials, promotions, client communications, bonuses, rewards, or financial incentives must adequately disclose inducements.",
+    "source_document": "Circular C502",
+    "source_page": 1,
+    "source_quote": "NCAs, in particular, will review how firms ensure that these disclosures adequately disclose inducements.",
     "source_url": "https://www.cysec.gov.cy/CMSPages/GetFile.aspx?guid=ddc8f60a-6b6e-4959-96bf-f74909d76988"
   },
   {
     "id": "ESMA35-36-1743-R001",
-    "requirement": "CFD providers must not use incentives when marketing CFDs to retail clients.",
+    "requirement": "CFD providers must not use any form of incentives, including monetary or non-monetary benefits, to encourage clients to trade CFDs.",
     "source_document": "ESMA35-36-1743",
     "source_page": 2,
-    "source_quote": "ESMA’s measures consist of restrictions to the marketing, distribution or sale of CFDs to retail clients and include: ... preventing the use of incentives by a CFD provider;",
+    "source_quote": "ESMA’s measures consist of restrictions to the marketing, distribution or sale of CFDs to retail clients and include... preventing the use of incentives by a CFD provider",
     "source_url": "https://www.esma.europa.eu/sites/default/files/library/esma35-36-1743-statement_product_intervention.pdf"
   },
   {
     "id": "ESMA35-36-1743-R002",
-    "requirement": "CFD providers must not use any form of promotional language that incentivises, induces or pressures a retail client to request to be treated as a professional client.",
+    "requirement": "Marketing materials and client communications must not contain promotional language that incentivises, induces, or pressures retail clients to request professional client status.",
     "source_document": "ESMA35-36-1743",
     "source_page": 3,
     "source_quote": "investment firms should strictly refrain from implementing any form of practice that incentivises, induces or pressures an investor to request to be treated as a professional client. In this respect, any form of promotional language in relation to the status of professional client shall be seen as incentivising a retail client to request a professional client status.",
@@ -89,7 +113,7 @@
   },
   {
     "id": "ESMA35-36-1743-R003",
-    "requirement": "CFD providers must not use promotional language that compares leverage limits available to different types of clients as this qualifies as incentivisation.",
+    "requirement": "Marketing materials must not compare leverage limits available to different client categories if such comparison incentivises retail clients to seek professional client status.",
     "source_document": "ESMA35-36-1743",
     "source_page": 3,
     "source_quote": "ESMA considers that providing a comparison between leverage limits available to different types of clients would qualify as an incentivisation.",
@@ -97,31 +121,23 @@
   },
   {
     "id": "ESMA35-36-1743-R004",
-    "requirement": "CFD providers must not promise or provide any form of monetary or non-monetary benefit as a reward for becoming a professional client.",
+    "requirement": "CFD providers must not advertise or promote the possibility for retail clients to move their accounts to intra-group third-country entities if this circumvents ESMA’s product intervention measures.",
     "source_document": "ESMA35-36-1743",
-    "source_page": 3,
-    "source_quote": "the promise or the provision of any form of monetary or non-monetary benefit as a “reward” for becoming a professional client will be seen as an inappropriate practice.",
+    "source_page": 4,
+    "source_quote": "Information in relation to the ‘benefits’ of trading CFDs with such an intra-group third-country entity could be seen as a circumvention of ESMA’s product intervention measures by the EU authorised firm or a solicitation of retail clients or potential clients, promotion or advertising of investment services in the Union by the third-country entity.",
     "source_url": "https://www.esma.europa.eu/sites/default/files/library/esma35-36-1743-statement_product_intervention.pdf"
   },
   {
     "id": "ESMA35-36-1743-R005",
-    "requirement": "Third-country CFD providers must not market CFDs to retail clients in the Union that do not comply with ESMA’s or national product intervention measures.",
+    "requirement": "Marketing communications must not promote CFDs to retail clients in the Union that do not comply with ESMA’s or national product intervention measures, including offering higher leverage limits through third-country entities.",
     "source_document": "ESMA35-36-1743",
     "source_page": 5,
     "source_quote": "CFD providers are not allowed to market CFDs to retail clients in the Union that do not comply with the requirements from ESMA’s or national product intervention measures.",
     "source_url": "https://www.esma.europa.eu/sites/default/files/library/esma35-36-1743-statement_product_intervention.pdf"
   },
   {
-    "id": "ESMA35-36-1743-R006",
-    "requirement": "Marketing or incentivising language about the possibility to open an account with a third-country entity offering CFDs with higher leverage limits is prohibited as it constitutes marketing towards clients located in the EU.",
-    "source_document": "ESMA35-36-1743",
-    "source_page": 5,
-    "source_quote": "Promotional or incentivising language about the possibility to open an account with a third-country entity shall be seen as a marketing towards the client located in the EU, for example marketing the possibility to open an account where CFDs with higher leverage limits can be traded.",
-    "source_url": "https://www.esma.europa.eu/sites/default/files/library/esma35-36-1743-statement_product_intervention.pdf"
-  },
-  {
     "id": "ESMA35-43-1000-R001",
-    "requirement": "CFD providers must not offer, directly or indirectly, any payment, monetary or non-monetary benefit (other than information and research tools related to CFDs) as an incentive to retail investors to trade CFDs.",
+    "requirement": "Marketing, distribution or sale of CFDs to retail investors must not include any payment, monetary or non-monetary benefit (other than information and research tools related to CFDs) as an incentive to trade.",
     "source_document": "ESMA35-43-1000",
     "source_page": 7,
     "source_quote": "CFD providers will be required not to provide, directly or indirectly, retail investors with a payment, monetary or excluded non-monetary benefit (i.e. any non-monetary benefit other than, insofar as they relate to CFDs, information and research tools) in relation to the marketing, distribution or sale of a CFD, other than the realised profits on any CFD provided.",
@@ -129,7 +145,7 @@
   },
   {
     "id": "ESMA35-43-1000-R002",
-    "requirement": "All communications relating to the marketing, distribution or sale of CFDs to retail investors must include an appropriate risk warning that states the percentage of the provider's retail investor CFD trading accounts that lost money over the last 12 months.",
+    "requirement": "All communications relating to the marketing, distribution or sale of CFDs to retail investors must include an appropriate risk warning that discloses the percentage of retail investor CFD trading accounts that lost money over the last 12-month period.",
     "source_document": "ESMA35-43-1000",
     "source_page": 8,
     "source_quote": "CFD providers will not be allowed to send, directly or indirectly, a communication to or publish information accessible by a retail investor relating to the marketing, distribution or sale of a CFD unless it includes an appropriate risk warning. In the risk warning, each CFD provider will be required to provide the percentage of its retail investor CFD trading accounts that lost money over the last 12-month period.",
@@ -145,7 +161,7 @@
   },
   {
     "id": "CI144-2012-10-R001",
-    "requirement": "All information, including marketing communication, addressed to clients or potential clients shall be fair, clear and not misleading.",
+    "requirement": "All information, including marketing communication, addressed to clients or potential clients must be fair, clear, and not misleading.",
     "source_document": "CI144-2012-10",
     "source_page": 1,
     "source_quote": "all information, including marketing communication, addressed by CIFs to their clients or potential clients, shall be fair, clear and not misleading (section 36(1)(a) of Investment Services and Activities and Regulated Markets Law of 2007 as amended)",
@@ -153,39 +169,39 @@
   },
   {
     "id": "CI144-2012-10-R002",
-    "requirement": "Marketing communication must use prominent bold type styles for important information, statements or warnings.",
-    "source_document": "CI144-2012-10",
-    "source_page": 1,
-    "source_quote": "Important information, statements or warnings are prominent using bold type styles.",
-    "source_url": "https://www.cysec.gov.cy/CMSPages/GetFile.aspx?guid=959f2de5-e987-4041-94bc-ca5e1283fc97"
-  },
-  {
-    "id": "CI144-2012-10-R003",
-    "requirement": "Marketing communication must balance both the benefits and drawbacks of a financial product/service through equally prominent features.",
+    "requirement": "Marketing communications must include both benefits and drawbacks of a financial product or service, presented with equal prominence.",
     "source_document": "CI144-2012-10",
     "source_page": 1,
     "source_quote": "Both the benefits and drawbacks of a financial product/service are balanced through equally prominent features.",
     "source_url": "https://www.cysec.gov.cy/CMSPages/GetFile.aspx?guid=959f2de5-e987-4041-94bc-ca5e1283fc97"
   },
   {
-    "id": "CI144-2012-10-R004",
-    "requirement": "Risk warnings in marketing communication must be contained within their own distinct border to draw the reader’s attention.",
+    "id": "CI144-2012-10-R003",
+    "requirement": "Important information, statements, or warnings in marketing communications must be made prominent, for example by using bold type styles.",
     "source_document": "CI144-2012-10",
     "source_page": 1,
-    "source_quote": "Risk warnings are contained within their own distinct border, thus drawing the reader’s attention to them.",
+    "source_quote": "Important information, statements or warnings are prominent using bold type styles.",
     "source_url": "https://www.cysec.gov.cy/CMSPages/GetFile.aspx?guid=959f2de5-e987-4041-94bc-ca5e1283fc97"
   },
   {
-    "id": "CI144-2012-10-R005",
-    "requirement": "Risk warnings must be clearly stated within the main body of the marketing communication and ahead of the ‘small print’.",
+    "id": "CI144-2012-10-R004",
+    "requirement": "Risk warnings in marketing communications must be clearly stated within the main body and placed ahead of any legal text or contact information.",
     "source_document": "CI144-2012-10",
     "source_page": 1,
     "source_quote": "Risk warnings are clearly stated within the main body of the marketing communication and ahead of the ‘small print’ (i.e. legal text or contact information)",
     "source_url": "https://www.cysec.gov.cy/CMSPages/GetFile.aspx?guid=959f2de5-e987-4041-94bc-ca5e1283fc97"
   },
   {
+    "id": "CI144-2012-10-R005",
+    "requirement": "Risk warnings in marketing communications should be contained within a distinct border to draw the reader’s attention.",
+    "source_document": "CI144-2012-10",
+    "source_page": 1,
+    "source_quote": "Risk warnings are contained within their own distinct border, thus drawing the reader’s attention to them.",
+    "source_url": "https://www.cysec.gov.cy/CMSPages/GetFile.aspx?guid=959f2de5-e987-4041-94bc-ca5e1283fc97"
+  },
+  {
     "id": "CI144-2012-10-R006",
-    "requirement": "Risk information must appear on the website home page that the customer first arrives at when following a promotional link.",
+    "requirement": "Risk information must appear on the website home page that customers first arrive at when following a promotional link.",
     "source_document": "CI144-2012-10",
     "source_page": 1,
     "source_quote": "Risk information appears on the website home page of CIFs that the customer first arrives at, when following a promotional link.",
@@ -193,183 +209,87 @@
   },
   {
     "id": "CI144-2012-10-R007",
-    "requirement": "Marketing communication must include a risk warning wording such as: 'the investment value can both increase and decrease and the investors may lose all their invested capital'.",
+    "requirement": "Marketing communications must include a risk warning stating that investment value can both increase and decrease and that investors may lose all their invested capital; for leveraged products, it must be emphasized that losses may exceed the invested capital.",
     "source_document": "CI144-2012-10",
     "source_page": 2,
-    "source_quote": "use wording such as the following: ‘the investment value can both increase and decrease and the investors may lose all their invested capital’.",
+    "source_quote": "the investment value can both increase and decrease and the investors may lose all their invested capital... in case of a leverage product, CIFs should emphasize that “loses may be more than the invested capital”.",
     "source_url": "https://www.cysec.gov.cy/CMSPages/GetFile.aspx?guid=959f2de5-e987-4041-94bc-ca5e1283fc97"
   },
   {
     "id": "CI144-2012-10-R008",
-    "requirement": "For leverage products, marketing communication must emphasize that losses may be more than the invested capital.",
-    "source_document": "CI144-2012-10",
-    "source_page": 2,
-    "source_quote": "in case of a leverage product, CIFs should emphasize that “loses may be more than the invested capital”.",
-    "source_url": "https://www.cysec.gov.cy/CMSPages/GetFile.aspx?guid=959f2de5-e987-4041-94bc-ca5e1283fc97"
-  },
-  {
-    "id": "CI144-2012-10-R009",
-    "requirement": "Marketing information must include the name of the investment firm (IF).",
+    "requirement": "Marketing information must include the name of the investment firm providing the information.",
     "source_document": "CI144-2012-10",
     "source_page": 3,
     "source_quote": "The information: (a) shall include the name of the IF;",
     "source_url": "https://www.cysec.gov.cy/CMSPages/GetFile.aspx?guid=959f2de5-e987-4041-94bc-ca5e1283fc97"
   },
   {
-    "id": "CI144-2012-10-R010",
-    "requirement": "Marketing information shall not emphasize potential benefits without also giving a fair and prominent indication of any relevant risks.",
+    "id": "CI144-2012-10-R009",
+    "requirement": "Marketing information must be accurate and must not emphasize potential benefits without also giving a fair and prominent indication of any relevant risks.",
     "source_document": "CI144-2012-10",
     "source_page": 3,
-    "source_quote": "shall not emphasize any potential benefits of an investment service or financial instrument without also giving a fair and prominent indication of any relevant risks;",
+    "source_quote": "shall be accurate and in particular shall not emphasize any potential benefits of an investment service or financial instrument without also giving a fair and prominent indication of any relevant risks;",
     "source_url": "https://www.cysec.gov.cy/CMSPages/GetFile.aspx?guid=959f2de5-e987-4041-94bc-ca5e1283fc97"
   },
   {
-    "id": "CI144-2012-10-R011",
-    "requirement": "Marketing information must be sufficient for and presented in a way likely to be understood by the average member of the target group.",
+    "id": "CI144-2012-10-R010",
+    "requirement": "Marketing information must be sufficient and presented in a way likely to be understood by the average member of the target group.",
     "source_document": "CI144-2012-10",
     "source_page": 3,
     "source_quote": "shall be sufficient for, and presented in a way that is likely to be understood by, the average member of the group to whom it is directed, or by whom it is likely to be received;",
     "source_url": "https://www.cysec.gov.cy/CMSPages/GetFile.aspx?guid=959f2de5-e987-4041-94bc-ca5e1283fc97"
   },
   {
-    "id": "CI144-2012-10-R012",
-    "requirement": "Marketing information shall not disguise, diminish or obscure important items, statements or warnings.",
+    "id": "CI144-2012-10-R011",
+    "requirement": "Marketing information must not disguise, diminish or obscure important items, statements or warnings.",
     "source_document": "CI144-2012-10",
     "source_page": 3,
     "source_quote": "shall not disguise, diminish or obscure important items, statements or warnings",
     "source_url": "https://www.cysec.gov.cy/CMSPages/GetFile.aspx?guid=959f2de5-e987-4041-94bc-ca5e1283fc97"
   },
   {
-    "id": "CI144-2012-10-R013",
-    "requirement": "Where marketing information compares investment or ancillary services, financial instruments, or providers, the comparison must be meaningful and presented in a fair and balanced way.",
+    "id": "CI144-2012-10-R012",
+    "requirement": "Comparisons in marketing information must be meaningful, fair, balanced, specify sources of information, and include key facts and assumptions used.",
     "source_document": "CI144-2012-10",
     "source_page": 3,
-    "source_quote": "the comparison must be meaningful and presented in a fair and balanced way;",
+    "source_quote": "the comparison must be meaningful and presented in a fair and balanced way; the sources of the information used for the comparison must be specified; the key facts and assumptions used to make the comparison must be included.",
+    "source_url": "https://www.cysec.gov.cy/CMSPages/GetFile.aspx?guid=959f2de5-e987-4041-94bc-ca5e1283fc97"
+  },
+  {
+    "id": "CI144-2012-10-R013",
+    "requirement": "If marketing information includes past performance, it must not be the most prominent feature, must cover at least the preceding 5 years or the whole period offered, state the reference period and source, include a prominent warning that past performance is not a reliable indicator of future results, disclose currency if different from client’s, and disclose effect of commissions, fees or charges if based on gross performance.",
+    "source_document": "CI144-2012-10",
+    "source_page": 3,
+    "source_quote": "Where the information contains an indication of past performance... (a) that indication must not be the most prominent feature... (b) the information must include appropriate performance information... (c) the reference period and the source of information must be clearly stated; (d) the information must contain a prominent warning that the figures refer to the past and that past performance is not a reliable indicator of future results; (e) where the indication relies on figures denominated in a currency other than that of the Member State... (f) where the indication is based on gross performance, the effect of commissions, fees or other charges must be disclosed.",
     "source_url": "https://www.cysec.gov.cy/CMSPages/GetFile.aspx?guid=959f2de5-e987-4041-94bc-ca5e1283fc97"
   },
   {
     "id": "CI144-2012-10-R014",
-    "requirement": "Marketing information that compares services or products must specify the sources of the information used for the comparison.",
+    "requirement": "If marketing information includes simulated past performance, it must be based on actual past performance of relevant financial instruments or indices, comply with past performance disclosure rules, and include a prominent warning that simulated past performance is not a reliable indicator of future performance.",
     "source_document": "CI144-2012-10",
     "source_page": 3,
-    "source_quote": "the sources of the information used for the comparison must be specified;",
+    "source_quote": "Where the information includes or refers to simulated past performance... (a) the simulated past performance must be based on the actual past performance... (b) conditions set out in points (a) to (c), (e) and (f) of subparagraph 4 must be complied with; (c) the information must contain a prominent warning that the figures refer to simulated past performance and that past performance is not a reliable indicator of future performance.",
     "source_url": "https://www.cysec.gov.cy/CMSPages/GetFile.aspx?guid=959f2de5-e987-4041-94bc-ca5e1283fc97"
   },
   {
     "id": "CI144-2012-10-R015",
-    "requirement": "Marketing information that compares services or products must include the key facts and assumptions used to make the comparison.",
+    "requirement": "Marketing information containing future performance forecasts must not be based on simulated past performance, must be based on reasonable assumptions supported by objective data, disclose effect of commissions, fees or charges if based on gross performance, and include a prominent warning that such forecasts are not reliable indicators of future performance.",
     "source_document": "CI144-2012-10",
-    "source_page": 3,
-    "source_quote": "the key facts and assumptions used to make the comparison must be included.",
+    "source_page": 4,
+    "source_quote": "Where the information contains information on future performance... (a) must not be based on or refer to simulated past performance; (b) must be based on reasonable assumptions supported by objective data; (c) effect of commissions, fees or other charges must be disclosed; (d) must contain a prominent warning that such forecasts are not a reliable indicator of future performance.",
     "source_url": "https://www.cysec.gov.cy/CMSPages/GetFile.aspx?guid=959f2de5-e987-4041-94bc-ca5e1283fc97"
   },
   {
     "id": "CI144-2012-10-R016",
-    "requirement": "Where marketing information contains an indication of past performance, it must not be the most prominent feature of the communication.",
-    "source_document": "CI144-2012-10",
-    "source_page": 3,
-    "source_quote": "that indication must not be the most prominent feature of the communication;",
-    "source_url": "https://www.cysec.gov.cy/CMSPages/GetFile.aspx?guid=959f2de5-e987-4041-94bc-ca5e1283fc97"
-  },
-  {
-    "id": "CI144-2012-10-R017",
-    "requirement": "Past performance information must cover the immediately preceding 5 years or the whole period the product/service has been offered, based on complete 12-month periods.",
-    "source_document": "CI144-2012-10",
-    "source_page": 3,
-    "source_quote": "the information must include appropriate performance information which covers the immediately preceding 5 years, or the whole period for which the financial instrument has been offered... and in every case that performance information must be based on complete 12-month periods;",
-    "source_url": "https://www.cysec.gov.cy/CMSPages/GetFile.aspx?guid=959f2de5-e987-4041-94bc-ca5e1283fc97"
-  },
-  {
-    "id": "CI144-2012-10-R018",
-    "requirement": "Marketing information must clearly state the reference period and the source of past performance information.",
-    "source_document": "CI144-2012-10",
-    "source_page": 3,
-    "source_quote": "the reference period and the source of information must be clearly stated;",
-    "source_url": "https://www.cysec.gov.cy/CMSPages/GetFile.aspx?guid=959f2de5-e987-4041-94bc-ca5e1283fc97"
-  },
-  {
-    "id": "CI144-2012-10-R019",
-    "requirement": "Marketing information containing past performance must include a prominent warning that past performance is not a reliable indicator of future results.",
-    "source_document": "CI144-2012-10",
-    "source_page": 3,
-    "source_quote": "the information must contain a prominent warning that the figures refer to the past and that past performance is not a reliable indicator of future results;",
-    "source_url": "https://www.cysec.gov.cy/CMSPages/GetFile.aspx?guid=959f2de5-e987-4041-94bc-ca5e1283fc97"
-  },
-  {
-    "id": "CI144-2012-10-R020",
-    "requirement": "If past performance figures are denominated in a currency other than that of the client’s Member State, the currency must be clearly stated with a warning about currency fluctuation risks.",
-    "source_document": "CI144-2012-10",
-    "source_page": 3,
-    "source_quote": "where the indication relies on figures denominated in a currency other than that of the Member State in which the retail client or potential retail client is resident, the currency must be clearly stated, together with a warning that the return may increase or decrease as a result of currency fluctuations;",
-    "source_url": "https://www.cysec.gov.cy/CMSPages/GetFile.aspx?guid=959f2de5-e987-4041-94bc-ca5e1283fc97"
-  },
-  {
-    "id": "CI144-2012-10-R021",
-    "requirement": "If past performance is based on gross performance, the effect of commissions, fees or other charges must be disclosed.",
-    "source_document": "CI144-2012-10",
-    "source_page": 3,
-    "source_quote": "where the indication is based on gross performance, the effect of commissions, fees or other charges must be disclosed.",
-    "source_url": "https://www.cysec.gov.cy/CMSPages/GetFile.aspx?guid=959f2de5-e987-4041-94bc-ca5e1283fc97"
-  },
-  {
-    "id": "CI144-2012-10-R022",
-    "requirement": "Marketing information including simulated past performance must relate to a financial instrument or index and comply with conditions for actual past performance disclosures.",
-    "source_document": "CI144-2012-10",
-    "source_page": 3,
-    "source_quote": "the simulated past performance must be based on the actual past performance of one or more financial instruments or financial indices... the conditions set out in points (a) to (c), (e) and (f) of subparagraph 4 must be complied with;",
-    "source_url": "https://www.cysec.gov.cy/CMSPages/GetFile.aspx?guid=959f2de5-e987-4041-94bc-ca5e1283fc97"
-  },
-  {
-    "id": "CI144-2012-10-R023",
-    "requirement": "Marketing information with simulated past performance must contain a prominent warning that the figures refer to simulated past performance and that past performance is not a reliable indicator of future performance.",
-    "source_document": "CI144-2012-10",
-    "source_page": 3,
-    "source_quote": "the information must contain a prominent warning that the figures refer to simulated past performance and that past performance is not a reliable indicator of future performance.",
-    "source_url": "https://www.cysec.gov.cy/CMSPages/GetFile.aspx?guid=959f2de5-e987-4041-94bc-ca5e1283fc97"
-  },
-  {
-    "id": "CI144-2012-10-R024",
-    "requirement": "Marketing information containing future performance forecasts must not be based on or refer to simulated past performance.",
-    "source_document": "CI144-2012-10",
-    "source_page": 4,
-    "source_quote": "the information must not be based on or refer to simulated past performance;",
-    "source_url": "https://www.cysec.gov.cy/CMSPages/GetFile.aspx?guid=959f2de5-e987-4041-94bc-ca5e1283fc97"
-  },
-  {
-    "id": "CI144-2012-10-R025",
-    "requirement": "Future performance information must be based on reasonable assumptions supported by objective data.",
-    "source_document": "CI144-2012-10",
-    "source_page": 4,
-    "source_quote": "the information must be based on reasonable assumptions supported by objective data;",
-    "source_url": "https://www.cysec.gov.cy/CMSPages/GetFile.aspx?guid=959f2de5-e987-4041-94bc-ca5e1283fc97"
-  },
-  {
-    "id": "CI144-2012-10-R026",
-    "requirement": "If future performance information is based on gross performance, the effect of commissions, fees or other charges must be disclosed.",
-    "source_document": "CI144-2012-10",
-    "source_page": 4,
-    "source_quote": "where the information is based on gross performance, the effect of commissions, fees or other charges must be disclosed;",
-    "source_url": "https://www.cysec.gov.cy/CMSPages/GetFile.aspx?guid=959f2de5-e987-4041-94bc-ca5e1283fc97"
-  },
-  {
-    "id": "CI144-2012-10-R027",
-    "requirement": "Marketing information with future performance forecasts must contain a prominent warning that such forecasts are not a reliable indicator of future performance.",
-    "source_document": "CI144-2012-10",
-    "source_page": 4,
-    "source_quote": "the information must contain a prominent warning that such forecasts are not a reliable indicator of future performance",
-    "source_url": "https://www.cysec.gov.cy/CMSPages/GetFile.aspx?guid=959f2de5-e987-4041-94bc-ca5e1283fc97"
-  },
-  {
-    "id": "CI144-2012-10-R028",
-    "requirement": "Marketing information referring to a particular tax treatment must prominently state that the tax treatment depends on individual client circumstances and may change in the future.",
+    "requirement": "Marketing information referring to particular tax treatment must prominently state that tax treatment depends on individual client circumstances and may be subject to change.",
     "source_document": "CI144-2012-10",
     "source_page": 4,
     "source_quote": "Where the information refers to a particular tax treatment, it shall prominently state that the tax treatment depends on the individual circumstances of each client and may be subject to change in the future.",
     "source_url": "https://www.cysec.gov.cy/CMSPages/GetFile.aspx?guid=959f2de5-e987-4041-94bc-ca5e1283fc97"
   },
   {
-    "id": "CI144-2012-10-R029",
-    "requirement": "Marketing information shall not use the name of any competent authority in a way that suggests endorsement or approval of the products or services of the investment firm.",
+    "id": "CI144-2012-10-R017",
+    "requirement": "Marketing information must not use the name of any competent authority in a way that suggests endorsement or approval of the products or services of the investment firm.",
     "source_document": "CI144-2012-10",
     "source_page": 4,
     "source_quote": "The information shall not use the name of any competent authority in such a way that would indicate or suggest endorsement or approval by that authority of the products or services of the IF.",

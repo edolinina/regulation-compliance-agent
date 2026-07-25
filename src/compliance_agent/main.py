@@ -1,3 +1,5 @@
+"""Command-line entry point for rule extraction and compliance evaluation."""
+
 from __future__ import annotations
 
 import argparse
@@ -13,17 +15,22 @@ from .models import Settings
 
 
 class CompliancePipeline:
+    """Coordinate rule extraction and evaluation with shared LLM settings."""
+
     def __init__(self, settings: Settings) -> None:
+        """Initialize both pipeline stages with the same LLM client."""
         llm = LLMClient(settings)
 
         self._extractor = RuleExtractor(llm)
         self._evaluator = ComplianceEvaluator(llm)
 
     async def extract_rules(self) -> None:
+        """Extract and persist rules from the configured regulation PDFs."""
         rules = await self._extractor.run()
         print(f"Extracted {len(rules)} rules.")
 
     async def evaluate(self, user_text: str) -> None:
+        """Evaluate user text and print a formatted compliance report."""
         result = await self._evaluator.evaluate(user_text)
         report = self._evaluator.render_report(result)
 
@@ -31,11 +38,13 @@ class CompliancePipeline:
             print(report)
 
     async def run(self, user_text: str) -> None:
+        """Run extraction first, then evaluate the provided user text."""
         await self.extract_rules()
         await self.evaluate(user_text)
 
 
 def load_settings() -> Settings:
+    """Load runtime settings from the environment and validate required keys."""
     load_dotenv()
 
     api_key = os.getenv("OPENAI_API_KEY")
@@ -53,6 +62,7 @@ def load_settings() -> Settings:
 
 
 def parse_args() -> argparse.Namespace:
+    """Parse CLI options for extraction and evaluation commands."""
     parser = argparse.ArgumentParser()
 
     parser.add_argument(
@@ -71,6 +81,7 @@ def parse_args() -> argparse.Namespace:
 
 
 async def async_main() -> None:
+    """Dispatch CLI actions based on the provided arguments."""
     args = parse_args()
     settings = load_settings()
     pipeline = CompliancePipeline(settings)
@@ -88,6 +99,7 @@ async def async_main() -> None:
 
 
 def main() -> None:
+    """Run the CLI and convert common runtime errors into exit messages."""
     try:
         asyncio.run(async_main())
     except (RuntimeError, FileNotFoundError, ValueError) as error:

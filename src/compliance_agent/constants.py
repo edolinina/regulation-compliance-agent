@@ -1,3 +1,5 @@
+"""Shared constants and prompt templates for the compliance agent."""
+
 from pathlib import Path
 
 
@@ -47,12 +49,15 @@ Extract only rules that can be checked against:
 - client communications;
 - bonuses, rewards, or financial incentives.
 
-Each rule must:
-- represent one atomic obligation or prohibition;
-- be directly supported by the circular;
+Each extracted rule must:
+- represent one distinct atomic obligation or prohibition;
+- capture the underlying compliance requirement, not example wording;
+- be directly supported by the regulation;
 - be checkable against user-provided text;
 - include the source page;
 - include a short supporting quote.
+
+Extract every distinct marketing-related requirement exactly once. Do not omit applicable requirements or create duplicate rules describing the same obligation.
 
 Do not extract:
 - background information;
@@ -60,6 +65,8 @@ Do not extract:
 - general summaries;
 - administrative instructions unrelated to marketing;
 - requirements that cannot be checked against user-provided marketing text.
+
+Do not convert illustrative or example wording into a mandatory requirement. Treat wording as mandatory only when the regulation explicitly requires the exact wording to be used.
 
 Always leave `source_url` empty.
 

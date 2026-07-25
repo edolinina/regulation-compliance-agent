@@ -1,3 +1,5 @@
+"""PDF download, text extraction, and rule extraction orchestration."""
+
 from __future__ import annotations
 
 import asyncio
@@ -21,6 +23,8 @@ from .models import ComplianceRule
 
 
 class RuleExtractor:
+    """Extract compliance rules from a configured set of regulation PDFs."""
+
     def __init__(
         self,
         llm: LLMClient,
@@ -28,12 +32,14 @@ class RuleExtractor:
         rules_path: Path = RULES_PATH,
         max_concurrency: int = MAX_CONCURRENT_DOCUMENTS,
     ) -> None:
+        """Configure extraction inputs and a concurrency limiter."""
         self._llm = llm
         self._pdf_urls = pdf_urls
         self._rules_path = rules_path
         self._semaphore = asyncio.Semaphore(max_concurrency)
 
     async def run(self) -> list[ComplianceRule]:
+        """Process all PDFs, persist extracted rules, and return them."""
         async with httpx.AsyncClient(
             timeout=DOWNLOAD_TIMEOUT_SECONDS,
             follow_redirects=True,
@@ -57,6 +63,7 @@ class RuleExtractor:
                 unit="PDF",
             ) as progress:
                 for completed in asyncio.as_completed(tasks):
+                    # Surface each document result as soon as it finishes.
                     document_id, document_rules, error = await completed
 
                     if error is not None:
@@ -81,6 +88,7 @@ class RuleExtractor:
         document_id: str,
         url: str,
     ) -> tuple[str, list[ComplianceRule], Exception | None]:
+        """Download one PDF, extract its text, and turn it into rules."""
         try:
             async with self._semaphore:
                 pdf_bytes = await self._download_pdf(client, url)
@@ -95,6 +103,7 @@ class RuleExtractor:
                     document_text=document_text,
                 )
 
+                # Persist the source URL on each returned rule for traceability.
                 for rule in result.rules:
                     rule.source_url = url
 
@@ -108,6 +117,7 @@ class RuleExtractor:
         client: httpx.AsyncClient,
         url: str,
     ) -> bytes:
+        """Fetch a remote PDF and validate the response looks like a PDF."""
         response = await client.get(url)
         response.raise_for_status()
 
@@ -122,10 +132,12 @@ class RuleExtractor:
 
     @staticmethod
     def _extract_text(pdf_bytes: bytes) -> str:
+        """Extract page-delimited text from raw PDF bytes."""
         reader = PdfReader(BytesIO(pdf_bytes))
 
         pages = [
             (
+                # Keep page markers so extracted rules can cite their origin.
                 f"===== PAGE {page_number} =====\n"
                 f"{(page.extract_text() or '').strip()}"
             )
@@ -148,6 +160,7 @@ class RuleExtractor:
         self,
         rules: list[ComplianceRule],
     ) -> None:
+        """Write validated rules to the configured JSON file."""
         self._rules_path.parent.mkdir(
             parents=True,
             exist_ok=True,
