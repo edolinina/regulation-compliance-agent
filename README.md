@@ -118,6 +118,30 @@ Evaluate the implementation against the provided golden dataset.
 python evaluate.py
 ```
 
+## Example Outputs
+
+### Rule Extraction
+
+The extraction step downloads the regulatory PDFs, extracts structured compliance rules, and stores them in `rules.json`.
+
+![Rule Extraction](assets/extraction.png)
+
+### Compliance Evaluation
+
+#### Compliant Marketing Text
+
+![Compliant Result](assets/compliant.png)
+
+#### Non-Compliant Marketing Text
+
+![Non-Compliant Result](assets/non_compliant.png)
+
+### Golden Dataset Evaluation
+
+Running the evaluation against the golden dataset:
+
+![Evaluation](assets/evaluation.png)
+
 ## Architectural Design Decisions
 
 - The solution separates **rule extraction** (one-time) from **compliance evaluation** (repeated). Regulatory PDFs are processed only once to extract structured rules, which are persisted in `rules.json`. Since regulations change infrequently and evaluation requires only the extracted rules, the original PDF content is not retained or indexed.

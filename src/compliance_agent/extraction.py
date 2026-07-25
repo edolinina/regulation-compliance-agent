@@ -76,7 +76,6 @@ class RuleExtractor:
                     progress.update(1)
 
         self._save_rules(rules)
-        print(f"Extracted {len(rules)} rules in total.")
 
         return rules
 
