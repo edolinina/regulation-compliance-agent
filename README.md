@@ -128,6 +128,8 @@ python evaluate.py
 
 ## Key Prompt Design Decisions
 
+The extraction prompt maximizes recall by extracting every distinct actionable requirement, while the evaluation prompt maintains precision by reporting only violations explicitly supported by both the regulation and the supplied marketing text.
+
 ### Rule extraction
 - Extract only actionable marketing compliance requirements.
 - Ignore background information, regulatory history and administrative guidance.
