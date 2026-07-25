@@ -124,23 +124,31 @@ python evaluate.py
 
 The extraction step downloads the regulatory PDFs, extracts structured compliance rules, and stores them in `rules.json`.
 
-![Rule Extraction](assets/extraction.png)
+<p align="center">
+  <img src="assets/extraction.png" alt="Rule Extraction" width="800">
+</p>
 
 ### Compliance Evaluation
 
 #### Compliant Marketing Text
 
-![Compliant Result](assets/compliant.png)
+<p align="center">
+  <img src="assets/compliant.png" alt="Compliant Result" width="800">
+</p>
 
 #### Non-Compliant Marketing Text
 
-![Non-Compliant Result](assets/non_compliant.png)
+<p align="center">
+  <img src="assets/non_compliant.png" alt="Non-Compliant Result" width="800">
+</p>
 
 ### Golden Dataset Evaluation
 
 Running the evaluation against the golden dataset:
 
-![Evaluation](assets/evaluation.png)
+<p align="center">
+  <img src="assets/evaluation.png" alt="Evaluation" width="800">
+</p>
 
 ## Architectural Design Decisions
 
