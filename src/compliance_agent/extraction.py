@@ -1,7 +1,5 @@
 """PDF download, text extraction, and rule extraction orchestration."""
 
-from __future__ import annotations
-
 import asyncio
 import json
 from io import BytesIO

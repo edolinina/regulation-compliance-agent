@@ -1,7 +1,5 @@
 """Command-line entry point for rule extraction and compliance evaluation."""
 
-from __future__ import annotations
-
 import argparse
 import asyncio
 import os

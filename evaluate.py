@@ -1,7 +1,5 @@
 """CLI entry point for evaluating the agent against the golden dataset."""
 
-from __future__ import annotations
-
 import argparse
 import asyncio
 import json
