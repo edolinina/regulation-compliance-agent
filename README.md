@@ -169,14 +169,13 @@ The extraction prompt maximizes recall by extracting every distinct actionable r
 
 One key observation was that regulatory documents are written for human readers rather than machine processing. Mandatory requirements are mixed with explanatory guidance, illustrative examples, and recommendations, without a consistent structure or format. Achieving reliable rule extraction and compliance evaluation therefore required carefully designed prompts to identify actionable requirements, distinguish them from non-binding content, and report only findings explicitly supported by both the regulations and the supplied marketing text. This also motivated the architecture: since only the extracted compliance rules are required during evaluation, the original PDFs do not need to be retained or embedded. Instead, the documents are processed once to produce a structured rule set that can be reused for subsequent evaluations.
 
-## Future Improvements
+## Future Enhancements
 
-With more time, the solution could be extended by:
+The current implementation provides a solid foundation that can be extended in several practical directions:
 
-- Storing extracted compliance rules in a dedicated rule store (e.g., a database with metadata and embeddings) instead of `rules.json`, enabling scalable retrieval and management of large regulatory rule sets.
-- Using RAG to retrieve only the most relevant compliance rules from the rule store instead of loading the full rule set.
-- Building a LangGraph workflow with separate retrieval, evaluation, and validation steps.
-- Exposing the compliance engine through a REST API for automation and a web UI for user-friendly compliance checks.
-- Supporting incremental rule updates when regulations change instead of rebuilding the entire rule set.
-- Expanding the golden dataset with additional real-world marketing examples and automated regression testing.
-- Supporting multiple jurisdictions (e.g., FCA, ESMA, CySEC) through pluggable regulation packs.
+- Replace `rules.json` with a dedicated rule store that supports metadata, versioning, and efficient management of larger regulatory rule sets.
+- Support incremental rule extraction, allowing only modified regulations to be reprocessed instead of rebuilding the entire rule set.
+- Expand the evaluation framework with a larger golden dataset, automated regression tests, and additional unit and integration tests.
+- Expose the compliance engine through a REST API and web interface for easier integration into compliance review workflows.
+- Support multiple regulatory frameworks (e.g., FCA, ESMA, CySEC) through pluggable regulation packs and jurisdiction-specific rule sets.
+- Introduce retrieval-based rule selection (RAG) if the regulatory corpus grows.
